@@ -2,6 +2,39 @@
 	<head>
 		<title> Programming Languages </title>
 		<link rel="stylesheet" href="style.css">
+		// Check if the "visited" cookie exists
+		const hasVisited = document.cookie.split(';').some((item) => item.trim().startsWith('visited='));
+
+		if (!hasVisited) {
+  		// If the user hasn't visited before, show the welcome message
+  			alert("Welcome to our website!");
+
+  		// Set the "visited" cookie to expire in 30 days (you can adjust the expiration time)
+  			const expirationDate = new Date();
+  			expirationDate.setDate(expirationDate.getDate() + 30);
+
+  			document.cookie = 'visited=true; expires=${expirationDate.toUTCString()}; path=/';
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	</head>
 	<body>
 		<h1>What are Programming Languages..?</h1>
