@@ -13,8 +13,12 @@ html{
     background-color: black;
 }
 body{
-    -webkit-text-fill-color:beige;
+    -webkit-text-fill-color:lightsteelblue;
 }
 h1{
-    -webkit-text-fill-color:lightblue;
+    -webkit-text-fill-color:lightgrey;
+}
+
+h2{
+    -webkit-text-fill-color:lightgrey;
 }
