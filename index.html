@@ -2,20 +2,30 @@
 	<head>
 		<title> Programming Languages </title>
 		<link rel="stylesheet" href="style.css">
-		// Check if the "visited" cookie exists
-		const hasVisited = document.cookie.split(';').some((item) => item.trim().startsWith('visited='));
-
-		if (!hasVisited) {
-  		// If the user hasn't visited before, show the welcome message
-  			alert("Welcome to our website!");
-
-  		// Set the "visited" cookie to expire in 30 days (you can adjust the expiration time)
-  			const expirationDate = new Date();
-  			expirationDate.setDate(expirationDate.getDate() + 30);
-
-  			document.cookie = 'visited=true; expires=${expirationDate.toUTCString()}; path=/';
-		}
-
+		<style>
+			/* Add your CSS styles here */
+			#welcome-message {
+			  display: none;
+			  background-color: #4CAF50;
+			  color: white;
+			  padding: 15px;
+			  text-align: center;
+			  position: fixed;
+			  top: 0;
+			  left: 0;
+			  width: 100%;
+			}
+		  </style>
+			
+  
+		<script>
+			// Check if the 'visited' cookie exists
+			if (document.cookie.indexOf("visited") === -1) {
+  				// If not, set the cookie and display the welcome message
+ 			 	document.cookie = "visited=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+  				document.getElementById("welcome-message").style.display = "block";
+			}
+		</script>
 
 
 
@@ -45,6 +55,11 @@
 		<h3>1. Procedural programming languages</br> 2. Functional programming languages
 		</br>3. Object-oriented programming languages</br>4. Scripting languages</br>5. Logic programming languages</h3></br>
 
+		<h2>Demo JavaScript in Head</h2>
+
+		<p id="demo">A Paragraph</p>
+		<button type="button" onclick="getCookie(name)">Try it</button>
+		<button type="button" onclick="setCookie(name, value, days)">Try it</button>	
 		<h2 style="color:red"> 3.Object-oriented programming languages </h2>
 		<h3> This type of language treats a program as a group of objects composed of data and program elements, known as attributes and methods. 		Objects can be reused within a program or in other programs. This makes it a popular language type for complex programs, as code is easier to 		reuse and scale. Some common object-oriented languages include</h3></br>
 
