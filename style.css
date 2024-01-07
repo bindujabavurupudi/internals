@@ -1,5 +1,5 @@
 body{
-    background-image: url("image.jpg");
+    background-image: url("black.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -13,7 +13,7 @@ html{
     background-color: black;
 }
 body{
-    -webkit-text-fill-color:lightpink;
+    -webkit-text-fill-color:beige;
 }
 h1{
     -webkit-text-fill-color:lightblue;
